@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Zilla+Slab+Highlight:wght@400;700&display=swap");
+body {
+  background: #ffffff;
+  color: #000000;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  min-height: 100vh;
+}
+
+.zilla-slab-highlight-regular {
+  font-family: "Zilla Slab Highlight", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.zilla-slab-highlight-bold {
+  font-family: "Zilla Slab Highlight", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+/*# sourceMappingURL=main.css.map */

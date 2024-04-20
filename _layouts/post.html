@@ -1,0 +1,30 @@
+---
+layout: default
+---
+{% if site.data.menu %}
+  {% include menu.html %}
+{% endif %}
+
+<article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting" id="main" role="article" aria-label="Content">
+
+  {% if page.title != "" %}
+    <h1 class="post-title zilla-slab-highlight-bold has-text-black" itemprop="name headline">
+      {{ page.title }}
+    </h1>
+  {% endif %}
+
+  <div class="post-content e-content" itemprop="articleBody">
+    {{ content }}
+  </div>
+  <div class="post-meta">
+    {% if page.author %}
+      <div itemprop="author">{{ page.author }}</div>
+    {% endif %}
+    <time class="post-date dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%d/%m/%Y" }}</time>
+  </div>
+
+  {% if site.staticman %}
+    {% include comments.html %}
+  {% endif %}
+
+</article>
