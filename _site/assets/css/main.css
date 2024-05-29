@@ -29,6 +29,10 @@ body {
   font-style: normal;
 }
 
+#home_main {
+  height: 100vh;
+}
+
 .navbar-item-hover:hover {
   background-color: black;
   color: white;
