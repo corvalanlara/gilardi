@@ -1,0 +1,18 @@
+---
+layout: default
+---
+<main>
+	<div class="section">
+		<div class="container">
+			{% assign obras = site.obras | reverse  %}
+			{% for obra in obras %}
+			{% if obra.type == 'sound' %}
+
+			{% include columnas.html %}
+
+			{% endif %}
+			{% endfor %} <!-- for obra in obras -->
+		</div>
+	</div>
+</main>
+

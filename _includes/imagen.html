@@ -1,0 +1,30 @@
+			{% if destacada.position == 'left' %}
+			
+			<div class="columns is-align-items-flex-end is-centered">
+				<div class="column {{ size }}">
+					<figure class="image is-pulled-right">
+						<img class="imagen" src="{{ destacada.filename | relative_url  }}">
+					</figure>
+				</div>
+				<div class="column">
+					<p class="has-text-left">
+						{{ destacada.texto }}
+					</p>
+					
+				</div>
+			</div>
+			{% else %}
+			<div class="columns is-align-items-flex-end is-centered">
+				<div class="column">
+					<p class="has-text-right">
+						{{ destacada.texto }}
+					</p>
+					
+				</div>
+				<div class="column {{ size }}">
+					<figure class="image is-pulled-left">
+						<img class="imagen" src="{{ destacada.filename | relative_url  }}">
+					</figure>
+				</div>
+			</div>
+			{% endif %} <!-- destacada.position is left or right -->

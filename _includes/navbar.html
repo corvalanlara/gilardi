@@ -1,0 +1,28 @@
+<nav class="navbar is-white is-transparent is-fixed-bottom" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a class="navbar-item" href="/">
+    </a>
+
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarJosefina">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+
+  <div id="navbarJosefina" class="navbar-menu">
+    <div class="navbar-start navbar-centered">
+      {% for item in site.data.menu %}
+      <a class="navbar-item navbar-item-hover" href="{{ item.url }}">
+	      {{ item.title }}
+      </a>
+      {% endfor %}
+    </div>
+    <div class="navbar-end">
+      <a href="/" class="navbar-item zilla-slab-highlight-regular">
+	      {{ site.title }}
+      </a>
+    </div>
+  </div>
+</nav>

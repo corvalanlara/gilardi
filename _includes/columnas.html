@@ -1,0 +1,21 @@
+{% if include.ultima == 'true' %}
+	{% assign destacada = primera %}
+{% else %}
+	{% assign destacada = obra %}
+{% endif %}
+
+{% case destacada.size %}
+{% when 'big' %}
+	{% assign size = 'is-two-thirds' %}
+{% when 'small' %}
+	{% assign size = 'is-one-thirds' %}
+{% else %}
+	{% assign size = 'is-half' %}
+{% endcase %}
+
+{% case destacada.type %}
+{% when "image" %}
+	{% include imagen.html %}
+{% when "sound" %}
+	{% include sonido.html %}
+{% endcase %}
