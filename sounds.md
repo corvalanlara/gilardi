@@ -1,4 +1,4 @@
 ---
 layout: sounds
-title: "Images"
+title: "Sounds"
 ---

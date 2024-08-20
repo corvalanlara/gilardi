@@ -29,6 +29,18 @@ body {
   font-style: normal;
 }
 
+@media (max-width: 770px) {
+  .reversed {
+    display: flex;
+    flex-flow: column;
+  }
+  .reversed :nth-child(even) {
+    order: 1;
+  }
+  .reversed :nth-child(odd) {
+    order: 2;
+  }
+}
 #home_main {
   height: 100vh;
 }

@@ -33,3 +33,19 @@ body {
   font-weight: 400;
   font-style: normal;
 }
+
+@media(max-width: 770px) {
+	.reversed {
+		display: flex;
+		flex-flow: column;
+		
+		:nth-child(even) {
+			order: 1;
+		}
+
+		:nth-child(odd) {
+			order: 2;
+		}
+
+	}
+}

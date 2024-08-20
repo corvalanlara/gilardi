@@ -1,10 +1,11 @@
 			{% if destacada.position == 'left' %}
 			
-			<div class="columns is-align-items-flex-end is-centered">
+			<div class="columns is-align-items-flex-end is-centered reversed">
 				<div class="column {{ size }}">
 						{{ destacada.content }}
 				</div>
 				<div class="column">
+					<h3 class="has-text-weight-bold">{{ destacada.title }}</h3>
 					<p class="has-text-left">
 						{{ destacada.texto }}
 					</p>
@@ -14,6 +15,7 @@
 			{% else %}
 			<div class="columns is-align-items-flex-end is-centered">
 				<div class="column">
+					<h3 class="has-text-weight-bold">{{ destacada.title }}</h3>
 					<p class="has-text-right">
 						{{ destacada.texto }}
 					</p>

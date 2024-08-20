@@ -1,12 +1,13 @@
 			{% if destacada.position == 'left' %}
 			
-			<div class="columns is-align-items-flex-end is-centered">
+			<div class="columns is-align-items-flex-end is-centered reversed">
 				<div class="column {{ size }}">
 					<figure class="image is-pulled-right">
 						<img class="imagen" src="{{ destacada.filename | relative_url  }}">
 					</figure>
 				</div>
 				<div class="column">
+					<h3 class="has-text-weight-bold">{{ destacada.title }}</h3>
 					<p class="has-text-left">
 						{{ destacada.texto }}
 					</p>
@@ -16,6 +17,7 @@
 			{% else %}
 			<div class="columns is-align-items-flex-end is-centered">
 				<div class="column">
+					<h3 class="has-text-weight-bold">{{ destacada.title }}</h3>
 					<p class="has-text-right">
 						{{ destacada.texto }}
 					</p>

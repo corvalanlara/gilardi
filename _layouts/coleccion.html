@@ -1,0 +1,18 @@
+---
+layout: default
+---
+<main>
+	<div class="section">
+		<div class="container">
+			<h1>{{ page.title }} ({{ page.year }})</h1>
+			<p>{{ content }}</p>
+			<br>
+			{% for obra in site.obras %}
+			{% if obra.coleccion == page.tag %}
+			{% include columnas.html %}
+			{% endif %}
+			{% endfor %}
+		</div>
+	</div>
+</main>
+

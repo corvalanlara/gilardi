@@ -4,3 +4,14 @@ title: "Josefina Gilardi" # the name of your site, e.g. ACME Corp.
 collections_dir: "collections"
 collections:
   obras:
+    permalink: /obra/:title/
+    output: true
+  colecciones:
+    permalink: /coleccion/:title/
+    output: true
+defaults:
+  - scope:
+      path: ""
+      type: "colecciones"
+    values:
+      layout: "coleccion"
