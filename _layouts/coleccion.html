@@ -2,13 +2,13 @@
 layout: default
 ---
 <main>
-	<div class="section contenido">
+	<div class="section">
 		<div class="container">
 			<div class="sticky">
 			<h1 class="title has-text-black">{{ page.title }} ({{ page.year }})</h1>
 			<p>{{ content }}</p>
 			</div>
-			<div class="section">
+			<div class="section obras">
 			{% for obra in site.obras %}
 			{% if obra.coleccion == page.tag %}
 			{% include columnas.html %}
