@@ -1,6 +1,8 @@
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: "" # the subpath of your site, e.g. /blog
 title: "Josefina Gilardi" # the name of your site, e.g. ACME Corp.
+baseurl: "/gilardi"
+url: "https://corvalan.dev"
 collections_dir: "collections"
 collections:
   obras:
@@ -9,6 +11,7 @@ collections:
   colecciones:
     permalink: /coleccion/:title/
     output: true
+    sort_by: orden
 defaults:
   - scope:
       path: ""

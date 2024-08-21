@@ -34,6 +34,22 @@ body {
   font-style: normal;
 }
 
+.sticky {
+	max-width: 40vw;
+	background: white;
+	border-radius: 5px;
+	z-index: 1;
+}
+
+.activo {
+	background-color: black !important;
+	color: white;
+}
+
+.contenido {
+	margin-bottom: 10em;
+}
+
 @media(max-width: 770px) {
 	.reversed {
 		display: flex;
@@ -47,5 +63,8 @@ body {
 			order: 2;
 		}
 
+	}
+	.sticky {
+		max-width: 100vw;
 	}
 }

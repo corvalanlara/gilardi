@@ -14,13 +14,13 @@
   <div id="navbarJosefina" class="navbar-menu">
     <div class="navbar-start navbar-centered">
       {% for item in site.data.menu %}
-      <a class="navbar-item navbar-item-hover" href="{{ item.url }}">
+      <a class="navbar-item{% if page.url == item.url %} activo{% else %} navbar-item-hover{% endif %}" href="{{ item.url | prepend: site.baseurl }}">
 	      {{ item.title }}
       </a>
       {% endfor %}
     </div>
     <div class="navbar-end">
-      <a href="/" class="navbar-item zilla-slab-highlight-regular">
+	    <a href="{{ '/' | prepend: site.baseurl }}" class="navbar-item zilla-slab-highlight-regular">
 	      {{ site.title }}
       </a>
     </div>
