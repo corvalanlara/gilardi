@@ -1,7 +1,8 @@
 <nav class="navbar is-white is-transparent is-fixed-bottom" role="navigation" aria-label="main navigation">
   <div class="navbar-brand">
-    <a class="navbar-item" href="/">
-    </a>
+	    <a href="{{ '/' | prepend: site.baseurl }}" class="navbar-item zilla-slab-highlight-regular">
+	      {{ site.title }}
+      </a>
 
     <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarJosefina">
       <span aria-hidden="true"></span>
@@ -12,17 +13,12 @@
   </div>
 
   <div id="navbarJosefina" class="navbar-menu">
-    <div class="navbar-start navbar-centered">
+    <div class="navbar-end">
       {% for item in site.data.menu %}
       <a class="navbar-item{% if page.url == item.url %} activo{% else %} navbar-item-hover{% endif %}" href="{{ item.url | prepend: site.baseurl }}">
 	      {{ item.title }}
       </a>
       {% endfor %}
-    </div>
-    <div class="navbar-end">
-	    <a href="{{ '/' | prepend: site.baseurl }}" class="navbar-item zilla-slab-highlight-regular">
-	      {{ site.title }}
-      </a>
     </div>
   </div>
 </nav>
