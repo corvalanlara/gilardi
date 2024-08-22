@@ -6,12 +6,15 @@ url: "https://corvalan.dev"
 collections_dir: "collections"
 collections:
   obras:
-    permalink: /obra/:title/
+    permalink: /work/:title/
     output: true
   colecciones:
-    permalink: /coleccion/:title/
+    permalink: /project/:title/
     output: true
-    sort_by: orden
+    order:
+      - lady-of-situations.md
+      - trio-z.md
+      - dos-gardenias.md
 defaults:
   - scope:
       path: ""
