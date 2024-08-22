@@ -11,7 +11,11 @@
 	height: 100vh;
 }
 
-.navbar-item-hover:hover {
+.project {
+	color: black;
+}
+
+.navbar-item-hover:hover, .project:hover {
 	background-color: black;
 	color: white;
 }
