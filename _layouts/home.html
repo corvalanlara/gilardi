@@ -3,7 +3,7 @@ layout: default
 ---
 <main id="home_main" style="background-color: {{ page.color }};">
 	<div class="section">
-		<div class="container obras">
+		<div class="container">
 			{% assign obras = site.obras | reverse  %}
 			{% assign primera = obras | first  %}
 			{% for obra in obras %}
