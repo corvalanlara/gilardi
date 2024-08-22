@@ -1,0 +1,21 @@
+			<div class="columns is-align-items-flex-end is-desktop is-centered">
+				<div class="column">
+					<h3 class="has-text-right has-text-weight-bold">{{ obra.name }}</h3>
+					<p class="has-text-right">
+						{{ obra.texto }}
+					</p>
+					
+				</div>
+				<div class="column">
+					{% if obra.type == "image" %}	
+					<figure class="image is-pulled-left pad">
+						<img class="imagen" src="{{ obra.filename | relative_url  }}">
+					</figure>
+					{% else %}
+					<div class="pad">
+						{{ obra.content }}
+					</div>
+					{% endif %}
+				</div>
+			</div>
+

@@ -9,7 +9,7 @@ title: "Home"
 			<p class="has-text-weight-bold">projects</p>
 			<ul>
 			{% for coleccion in site.colecciones %}
-			<li><a class="project" href="{{ coleccion.url | prepend: site.baseurl }}">{{ coleccion.title }}</a></li>
+			<li><a class="project is-lowercase" href="{{ coleccion.url | prepend: site.baseurl }}">{{ coleccion.title }}</a></li>
 
 			{% endfor %}
 			</ul>
