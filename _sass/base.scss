@@ -47,10 +47,10 @@ body {
 }
 
 .obras:last-child {
-	margin-bottom: 10em;
+	margin-bottom: 15em;
 }
 
-@media(max-width: 770px) {
+@media(max-width: 1024px) {
 	.reversed {
 		display: flex;
 		flex-flow: column;

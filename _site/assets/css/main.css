@@ -41,11 +41,11 @@ body {
   color: white;
 }
 
-.contenido {
-  margin-bottom: 10em;
+.obras:last-child {
+  margin-bottom: 15em;
 }
 
-@media (max-width: 770px) {
+@media (max-width: 1024px) {
   .reversed {
     display: flex;
     flex-flow: column;

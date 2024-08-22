@@ -3,15 +3,17 @@ layout: default
 ---
 <main>
 	<div class="section">
-		<div class="container obras">
+		<div class="container">
+			<div class="section obras">
 			{% assign obras = site.obras | reverse  %}
 			{% for obra in obras %}
-			{% if obra.type == 'image' %}
+			{% if obra.type == 'sound' %}
 
 			{% include columnas.html %}
 
 			{% endif %}
 			{% endfor %} <!-- for obra in obras -->
+			</div>
 		</div>
 	</div>
 </main>
