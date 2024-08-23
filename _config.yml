@@ -13,7 +13,8 @@ collections:
   colecciones:
     permalink: /project/:title/
     output: true
-    sort_by: year
+    sort_order: reverse
+    sort_by: order
 defaults:
   - scope:
       path: ""
