@@ -11,10 +11,7 @@ collections:
   colecciones:
     permalink: /project/:title/
     output: true
-    order:
-      - lady-of-situations.md
-      - trio-z.md
-      - dos-gardenias.md
+    sort_by: year
 defaults:
   - scope:
       path: ""
