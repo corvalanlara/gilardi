@@ -3,6 +3,8 @@ baseurl: "" # the subpath of your site, e.g. /blog
 title: "Josefina Gilardi" # the name of your site, e.g. ACME Corp.
 baseurl: "/gilardi"
 url: "https://corvalan.dev"
+description: ""
+portada: "assets/portafolio/ladyofsituations/Lady-of-Situations-14.jpg"
 collections_dir: "collections"
 collections:
   obras:
