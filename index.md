@@ -8,8 +8,7 @@ title: "Home"
 			<ul>
 			<p class="has-text-weight-bold">projects</p>
 			<ul>
-			{% assign colecciones = site.colecciones | sort: "year" %}
-			{% for coleccion in colecciones %}
+			{% for coleccion in site.colecciones reversed %}
 			<li><a class="project is-lowercase" href="{{ coleccion.url | prepend: site.baseurl }}">{{ coleccion.title }}</a></li>
 
 			{% endfor %}
