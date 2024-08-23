@@ -1,8 +1,8 @@
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: "" # the subpath of your site, e.g. /blog
 title: "Josefina Gilardi" # the name of your site, e.g. ACME Corp.
-baseurl: "/gilardi"
-url: "https://corvalan.dev"
+baseurl: ""
+url: "https://josefinagilardi.xyz"
 description: ""
 portada: "assets/portafolio/ladyofsituations/Lady-of-Situations-14.jpg"
 collections_dir: "collections"
