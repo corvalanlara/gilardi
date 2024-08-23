@@ -11,11 +11,19 @@ layout: default
 			<p>{{ content }}</p>
 			</div>
 			<div class="section obras">
-			{% for obra in site.obras %}
-			{% if obra.coleccion == page.tag %}
-			{% include work.html %}
+			{% if page.multiple %}
+				{% for obra in site.static_files %}
+					{% if obra.path contains page.tag %}
+						{% include work.html %}
+					{% endif %}
+				{% endfor %}
+			{% else %}
+				{% for obra in site.obras %}
+					{% if obra.coleccion == page.tag %}
+						{% include work.html %}
+					{% endif %}
+				{% endfor %}
 			{% endif %}
-			{% endfor %}
 			</div>
 		</div>
 	</div>

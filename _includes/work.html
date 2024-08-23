@@ -1,15 +1,24 @@
 			<div class="columns is-align-items-flex-end is-desktop is-centered">
 				<div class="column">
+					{% if page.multiple != true %}
+					{% if obra.name %}
 					<h3 class="has-text-right has-text-weight-bold">{{ obra.name }}</h3>
+					{% endif %}
+					{% if obra.texto %}
 					<p class="has-text-right">
 						{{ obra.texto }}
 					</p>
-					
+					{% endif %}
+					{% endif %}
 				</div>
-				<div class="column">
-					{% if obra.type == "image" %}	
+				<div class="column is-two-thirds-desktop">
+					{% if obra.type == "image" or page.multiple == true %}	
 					<figure class="image is-pulled-left pad">
+						{% if page.multiple %}
+						<img class="imagen" src="{{ obra.path | absolute_url  }}">
+						{% else %}
 						<img class="imagen" src="{{ obra.filename | relative_url  }}">
+						{% endif %}
 					</figure>
 					{% else %}
 					<div class="pad">

@@ -21,3 +21,7 @@ defaults:
       type: "colecciones"
     values:
       layout: "coleccion"
+  - scope:
+      path: "assets/portafolio"
+    values:
+      image: true
