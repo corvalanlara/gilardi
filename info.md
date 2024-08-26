@@ -6,8 +6,8 @@ title: "Home"
 	<div class="section">
 		<div class="container">
 			{% include return.html %}
-			<p class="has-text-weight-bold">Info</p>
-			<p>Artista audiovisual</p>
+	
+			<p>Artist and Sound Designer based in Amsterdam.</p>
 		</div>
 	</div>
 </main>
